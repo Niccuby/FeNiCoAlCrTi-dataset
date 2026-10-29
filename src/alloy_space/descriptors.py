@@ -1,16 +1,16 @@
-"""Дескрипторы для L1_2-окна: VEC, Al+Ti, Al/Ti, delta."""
+"""Descriptors for the L1_2 window: VEC, Al+Ti, Al/Ti, delta."""
 import numpy as np
 import pandas as pd
 
 BASE_6 = ['Ni', 'Co', 'Fe', 'Cr', 'Al', 'Ti']
 VEC_TABLE = {'Ni': 10, 'Co': 9, 'Fe': 8, 'Cr': 6, 'Al': 3, 'Ti': 4}
 RADIUS_TABLE = {'Ni': 124.6, 'Co': 125.2, 'Fe': 124.1,
-                'Cr': 124.9, 'Al': 143.2, 'Ti': 146.2}  # пм
+                'Cr': 124.9, 'Al': 143.2, 'Ti': 146.2}  # pm
 
 
 def calculate_descriptors(df: pd.DataFrame, elements=BASE_6) -> pd.DataFrame:
     missing = [e for e in elements if e not in VEC_TABLE or e not in RADIUS_TABLE]
-    assert not missing, f"Нет данных в таблицах для: {missing}"
+    assert not missing, f"No data in the lookup tables for: {missing}"
 
     x = df[elements].to_numpy(dtype=float)
     c = x / x.sum(axis=1, keepdims=True)

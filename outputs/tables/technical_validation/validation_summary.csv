@@ -1,0 +1,104 @@
+﻿Check,Field,Rows_evaluated,Issues,Status,Note
+Nonempty dataset,all,386,0,PASS,
+Required values,Paper,386,0,PASS,
+Required values,"Composition, at.%",386,0,PASS,
+Required values,Preparation,386,0,PASS,
+Required values,Phase composition,386,0,PASS,
+Required values,DOI,386,0,PASS,
+Required binary flag,L12 presence,386,0,PASS,
+Required binary flag,Target state,386,0,PASS,
+Numeric and finite,Ni,386,0,PASS,
+Numeric and finite,Co,386,0,PASS,
+Numeric and finite,Fe,386,0,PASS,
+Numeric and finite,Cr,386,0,PASS,
+Numeric and finite,Al,386,0,PASS,
+Numeric and finite,Ti,386,0,PASS,
+Numeric and finite,Cu,386,0,PASS,
+Numeric and finite,V,386,0,PASS,
+Numeric and finite,Mo,386,0,PASS,
+Numeric and finite,Hf,386,0,PASS,
+Numeric and finite,W,386,0,PASS,
+Numeric and finite,Ta,386,0,PASS,
+Numeric and finite,B,386,0,PASS,
+Numeric and finite,C,386,0,PASS,
+Numeric and finite,Nb,386,0,PASS,
+Numeric and finite,Mn,386,0,PASS,
+Numeric and finite,Sum,386,0,PASS,
+Numeric and finite,"HT 1, °C",386,0,PASS,
+Numeric and finite,"HT 1, min",386,0,PASS,
+Numeric and finite,"Recrystallization, °C",386,0,PASS,
+Numeric and finite,"Recrystallization, min",386,0,PASS,
+Numeric and finite,"Aging 1, °C",386,0,PASS,
+Numeric and finite,"Aging 1, min",386,0,PASS,
+Numeric and finite,"Aging 2, °C",386,0,PASS,
+Numeric and finite,"Aging 2, min",386,0,PASS,
+Numeric and finite,"Cold deformation, %",386,0,PASS,
+Numeric and finite,L12 presence,386,0,PASS,
+Numeric and finite,Target state,386,0,PASS,
+Numeric and finite,"Solvus Temperature, °C",99,0,PASS,
+Numeric and finite,"L12 fraction, %",115,0,PASS,
+Zero-encoded field completeness,Ni,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,Co,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,Fe,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,Cr,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,Al,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,Ti,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,Cu,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,V,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,Mo,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,Hf,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,W,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,Ta,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,B,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,C,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,Nb,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,Mn,386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,"HT 1, °C",386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,"HT 1, min",386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,"Recrystallization, °C",386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,"Recrystallization, min",386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,"Aging 1, °C",386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,"Aging 1, min",386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,"Aging 2, °C",386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,"Aging 2, min",386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Zero-encoded field completeness,"Cold deformation, %",386,0,PASS,"Raw blanks are reported, not changed. A blank processing value does not by itself prove the step was absent."
+Sum completeness,Sum,386,0,PASS,
+Element range,Ni,386,0,PASS,
+Element range,Co,386,0,PASS,
+Element range,Fe,386,0,PASS,
+Element range,Cr,386,0,PASS,
+Element range,Al,386,0,PASS,
+Element range,Ti,386,0,PASS,
+Element range,Cu,386,0,PASS,
+Element range,V,386,0,PASS,
+Element range,Mo,386,0,PASS,
+Element range,Hf,386,0,PASS,
+Element range,W,386,0,PASS,
+Element range,Ta,386,0,PASS,
+Element range,B,386,0,PASS,
+Element range,C,386,0,PASS,
+Element range,Nb,386,0,PASS,
+Element range,Mn,386,0,PASS,
+Concentration sum,elements,386,0,PASS,All element concentrations must be explicitly present.
+Stored Sum consistency,Sum,386,0,PASS,Absolute tolerance: 1e-06 at.%. All element concentrations must be explicitly present.
+Binary values,L12 presence,386,0,PASS,
+Binary values,Target state,386,0,PASS,
+Phase label structure,Phase composition,386,0,PASS,"Split on '+', trim whitespace, normalise Unicode. Rare phase labels are allowed."
+Phase flag consistency,L12 presence,386,0,PASS,Phase order is ignored; no substring matching or phase synonyms inferred.
+Phase flag consistency,Target state,386,0,PASS,Phase order is ignored; no substring matching or phase synonyms inferred.
+L12 fraction range,"L12 fraction, %",115,0,PASS,
+Positive fraction vs flag,"L12 fraction, %",115,0,PASS,
+Zero fraction with presence,"L12 fraction, %",115,0,PASS,Review source: zero could be rounding or a coding inconsistency; do not correct automatically.
+Processing range,"HT 1, min",386,0,PASS,
+Processing range,"Recrystallization, min",386,0,PASS,
+Processing range,"Aging 1, min",386,0,PASS,
+Processing range,"Aging 2, min",386,0,PASS,
+Processing range,"Cold deformation, %",386,0,PASS,
+Step temperature-duration pair,HT 1,386,0,PASS,Review the source and zero encoding; do not infer or fill unknown treatment parameters.
+Step temperature-duration pair,Recrystallization,386,0,PASS,Review the source and zero encoding; do not infer or fill unknown treatment parameters.
+Step temperature-duration pair,Aging 1,386,0,PASS,Review the source and zero encoding; do not infer or fill unknown treatment parameters.
+Step temperature-duration pair,Aging 2,386,0,PASS,Review the source and zero encoding; do not infer or fill unknown treatment parameters.
+Paper identifier,Paper,386,0,PASS,
+Sample ID vs DOI,Paper,386,0,PASS,Experimental samples must be labelled S<number> and carry DOI 'This work'; literature records must have a real DOI and an integer Paper.
+Potential duplicate records,composition + processing + source,386,0,PASS,Same source and condition; includes matching and conflicting phases. Numeric key rounded to 6 decimals. Missing processing values remain unknown. Manual review required.
+Matching record content,composition + processing + phases + source,386,0,PASS,"Candidate duplicates, not automatically proven errors; flags, fraction and other measurements may differ."
