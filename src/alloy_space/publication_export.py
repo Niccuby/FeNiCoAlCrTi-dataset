@@ -1,7 +1,10 @@
 from copy import deepcopy
 from pathlib import Path
+from time import perf_counter
 
+import kaleido
 import plotly.graph_objects as go
+
 
 # Layout size of a single 3D panel.
 PANEL_WIDTH = 1200
@@ -50,14 +53,36 @@ VIEW_FILES = {
 }
 
 
-def save_png(fig, path, width, height):
-    fig.write_image(
-        str(path),
-        format="png",
-        width=width,
-        height=height,
-        scale=EXPORT_SCALE,
+def _write(fig, path, fmt, width, height, scale=1):
+    path = Path(path)
+    started = perf_counter()
+    print(f"Exporting {path.name}...", flush=True)
+
+    kaleido.write_fig_sync(
+        fig,
+        path=str(path),
+        opts={
+            "format": fmt,
+            "width": width,
+            "height": height,
+            "scale": scale,
+        },
+        kopts={
+            "n": 1,
+            "timeout": 180,
+            "page_generator": kaleido.PageGenerator(mathjax=False),
+        },
     )
+
+    print(f"Finished {path.name}: {perf_counter() - started:.1f} s", flush=True)
+
+
+def save_png(fig, path, width, height):
+    _write(fig, path, "png", width, height, scale=EXPORT_SCALE)
+
+
+def save_svg(fig, path, width, height):
+    _write(fig, path, "svg", width, height, scale=1)
 
 
 def _number_font():
@@ -118,6 +143,7 @@ def make_static_panel(source_fig, camera, labels, marker_style=None):
         domain=dict(x=[0, 1], y=[0, 1]),
         camera=deepcopy(camera),
         aspectmode="cube",
+        dragmode=False,
         bgcolor="white",
         **axes,
     )
@@ -306,14 +332,10 @@ def export_publication_figures(source_fig, views, labels, output_dir):
 
     legend, width, height = make_legend(source_fig, labels)
     save_png(legend, output_dir / "pca_legend.png", width, height)
-    legend.write_image(
-        str(output_dir / "pca_legend.svg"), width=width, height=height
-    )
+    save_svg(legend, output_dir / "pca_legend.svg", width, height)
 
     key, width, height = make_composition_key(source_fig)
     save_png(key, output_dir / "pca_composition_trends.png", width, height)
-    key.write_image(
-        str(output_dir / "pca_composition_trends.svg"), width=width, height=height
-    )
+    save_svg(key, output_dir / "pca_composition_trends.svg", width, height)
 
     return output_dir
