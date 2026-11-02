@@ -5,7 +5,7 @@ import pandas as pd
 BASE_6 = ['Ni', 'Co', 'Fe', 'Cr', 'Al', 'Ti']
 VEC_TABLE = {'Ni': 10, 'Co': 9, 'Fe': 8, 'Cr': 6, 'Al': 3, 'Ti': 4}
 RADIUS_TABLE = {'Ni': 124.6, 'Co': 125.2, 'Fe': 124.1,
-                'Cr': 124.9, 'Al': 143.2, 'Ti': 146.2}  # pm
+                'Cr': 124.9, 'Al': 143.2, 'Ti': 146.2}
 
 
 def calculate_descriptors(df: pd.DataFrame, elements=BASE_6) -> pd.DataFrame:
