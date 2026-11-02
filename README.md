@@ -1,8 +1,11 @@
- Composition, processing and phase data for chemically complex intermetallic systems based on Fe–Ni–Co–Al–Cr–Ti
-
+# Fe–Ni–Co–Al–Cr–Ti intermetallic alloys: composition, processing and phase dataset
 Data and code accompanying the manuscript *"Composition, processing and phase data for chemically complex intermetallic systems based on Fe–Ni–Co–Al–Cr–Ti"* (under peer review; the citation and dataset DOI will be added after publication).
 
 The repository contains a curated dataset of 386 records on chemically complex (multi-principal-element) alloys of the Fe–Ni–Co–Al–Cr–Ti system with alloying additions (Cu, V, Mo, Hf, W, Ta, B, C, Nb, Mn). Each record links the alloy composition (at.%), the processing route and the experimentally reported phase constitution, with particular attention to the ordered L1₂ (γ′) phase. The repository also includes the code used to audit the data, map the composition space, merge in-house alloys with literature data and validate the final table.
+
+![Dataset creation workflow](assets/overview.png)
+
+*Fig. 1. Dataset creation workflow: literature data collection, composition-space analysis and experimental extension.*
 
 ## Dataset at a glance
 
@@ -26,6 +29,8 @@ Main files in the repository root:
 FeNiCoAlCrTi-dataset/
 |-- database_final.csv
 |-- database_final.xlsx
+|-- assets/
+|   `-- overview.png
 |-- data/
 |   |-- raw/
 |   |   |-- database_row.xlsx
@@ -66,6 +71,7 @@ FeNiCoAlCrTi-dataset/
 
 | Path | Content |
 |---|---|
+| `assets/` | Figures used in this README |
 | `database_final.csv`, `database_final.xlsx` | Final dataset (386 records, 38 columns): CSV for analysis, XLSX for viewing |
 | `data/raw/` | Source tables: literature records (`database_row.xlsx`) and samples of this work (`experimental_results.xlsx`) |
 | `data/raw/experiments/` | XRD phase identification for samples S1–S12 |
