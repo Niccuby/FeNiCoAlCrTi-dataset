@@ -1,4 +1,4 @@
-"""Descriptors for the L1_2 window: VEC, Al+Ti, Al/Ti, delta."""
+"""Descriptors for the window: VEC, Al+Ti, Al/Ti, delta."""
 import numpy as np
 import pandas as pd
 

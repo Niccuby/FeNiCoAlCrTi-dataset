@@ -99,7 +99,7 @@ Notebook 02 depends on the output of notebook 01. Notebooks 03 and 04 form a sep
 ### Composition-space analysis (notebook 02)
 
 - Concentrations of the six base elements (Ni, Co, Fe, Cr, Al, Ti) are standardized and projected with PCA; the first three components define a 3D map.
-- A regular 35-node grid in PC space is converted back to compositions. Physically valid nodes are filtered with an L1₂ window: VEC ≥ 7.85, Al+Ti = 8.0–12.5 at.%, Al/Ti = 0.9–2.2, atomic-size mismatch δ ≤ 6.0.
+- A regular 35-node grid in PC space is converted back to compositions. Physically valid nodes are filtered with a window: VEC ≥ 7.85, Al+Ti = 8.0–12.5 at.%, Al/Ti = 0.9–2.2, atomic-size mismatch δ ≤ 6.0.
 - Nodes whose distance to the nearest literature alloy is at or above the 85th percentile form the pool of composition gaps. Twelve candidate compositions were selected from this pool; the corresponding melted alloys are samples S1–S12.
 - The interactive HTML map loads plotly.js from a CDN and needs an internet connection.
 
