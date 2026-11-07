@@ -158,6 +158,16 @@ Notebook 04 runs automated checks on `database_final.xlsx`: schema and required 
 
 The checks do not verify values against the original publications.
 
+## Licensing
+
+The dataset is licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+See LICENSE-DATA for the full license text.
+
+The Python source code is licensed under the MIT License.
+See LICENSE for the full license text.
+
 ## Citation
 
 TODO: add the article and the dataset DOI after acceptance.
